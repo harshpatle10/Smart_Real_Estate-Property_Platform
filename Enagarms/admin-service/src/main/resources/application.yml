@@ -1,0 +1,17 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: admin-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/admin_db
+    username: root
+    password: harsh@123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true

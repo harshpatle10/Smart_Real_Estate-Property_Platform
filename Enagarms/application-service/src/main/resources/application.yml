@@ -1,0 +1,23 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: application-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/application_db
+    username: root
+    password: harsh@123
+
+    kafka:
+      bootstrap-servers: localhost:9092
+
+      producer:
+        value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+    show-sql: true
